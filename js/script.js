@@ -7,7 +7,7 @@ const code = url.searchParams.get("code");
 
 
 // if(!img_link || !title || !price || !old_price || !code){
-//   alert('Տվյալները ամբողջովին հասանելի չեն հնարաոր է չստացվի')
+//   alert('Տվյալները ամբողջովին հասանելի չեն հնարաոր է չստացվի');
 // }
 
 $('.product-title').text(title)

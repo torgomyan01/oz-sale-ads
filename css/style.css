@@ -39,16 +39,19 @@ html {
   width: 100%;
 }
 .product-title {
-  font-size: 30px;
+  position: absolute;
+  left: 49px;
+  top: 477px;
+  font-size: 23px;
   color: #fff;
-  width: 100%;
+  width: 607px;
   text-align: center;
   margin-bottom: 30px;
 }
 .product-body {
   position: absolute;
   right: 65px;
-  top: 483px;
+  top: 555px;
   width: 275px;
 }
 .product-prices {
@@ -89,7 +92,7 @@ html {
 .product-product {
   position: absolute;
   left: 69px;
-  top: 483px;
+  top: 550px;
   width: 273px;
   height: auto;
   border-radius: 18px;
