@@ -1,6 +1,6 @@
 const url = new URL(window.location);
 const img_link = url.searchParams.get("image_link");
-const title = url.searchParams.get("title");
+const title = url.searchParams.get("title").slice(0, 90);
 const price = url.searchParams.get("price");
 const old_price = url.searchParams.get("old_price");
 const code = url.searchParams.get("code");
