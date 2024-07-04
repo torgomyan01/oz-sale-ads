@@ -101,8 +101,10 @@ html {
     left: 69px;
     top: 546px;
     width: 313px;
+    max-height: 340px;
     height: auto;
     border-radius: 18px;
+    object-fit: cover;
   }
 
   &-code{
