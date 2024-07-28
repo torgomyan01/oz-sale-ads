@@ -96,3 +96,8 @@ $('#save-image').on('click', function () {
   view.document.close()
 
 })
+
+
+setTimeout(() => {
+  $('#save-image').click();
+}, 3000)
