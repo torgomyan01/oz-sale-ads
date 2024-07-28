@@ -85,6 +85,10 @@ $('#save-image').on('click', function () {
                         link.setAttribute('download', 'MintyPaper.png');
                         link.setAttribute('href', canvas.toDataURL('image/png').replace('image/png', 'imageoctet-stream'));
                         link.click();
+                        
+                        setTimeout(() => {
+                          window.close();
+                        }, 1000)
                     },1000)
                 </script>
                 <style>
