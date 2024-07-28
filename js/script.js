@@ -55,6 +55,10 @@ $(window).on('load', function (){
       .then(dataUrl => {
         $('.product-product').attr('src', dataUrl)
       })
+
+  setTimeout(() => {
+    $('#save-image').click();
+  }, Math.floor(Math.random() * 10000))
 })
 
 
@@ -104,7 +108,3 @@ $('#save-image').on('click', function () {
 
 })
 
-
-setTimeout(() => {
-  $('#save-image').click();
-}, Math.floor(Math.random() * 10000))
