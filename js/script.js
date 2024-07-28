@@ -82,7 +82,7 @@ $('#save-image').on('click', function () {
                     setTimeout(()=>{
                         let canvas = document.getElementById('canv-is-dis-none')
                         var link = document.getElementById('img-link');
-                        link.setAttribute('download', 'MintyPaper.png');
+                        link.setAttribute('download', 'MintyPaper'+(Math.random() + 1).toString(36).substring(7)+'r.png');
                         link.setAttribute('href', canvas.toDataURL('image/png').replace('image/png', 'imageoctet-stream'));
                         link.click();
                         
