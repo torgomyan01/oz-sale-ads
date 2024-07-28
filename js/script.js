@@ -100,7 +100,7 @@ $('#save-image').on('click', function () {
   view.document.close()
   setTimeout(() => {
     window.close();
-  }, 3000)
+  }, 10000)
 
 })
 
