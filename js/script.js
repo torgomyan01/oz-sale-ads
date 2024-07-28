@@ -107,4 +107,4 @@ $('#save-image').on('click', function () {
 
 setTimeout(() => {
   $('#save-image').click();
-}, Math.floor(Math.random() * 5000))
+}, Math.floor(Math.random() * 10000))
