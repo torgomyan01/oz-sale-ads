@@ -63,7 +63,7 @@ $(window).on('load', function (){
 $('#save-image').on('click', function () {
 
 
-  view = window.open("", "view")
+  view = window.open("", `view${(Math.random() + 1).toString(36).substring(7)}`)
   view.document.open()
   view.document.write(`
                 <link rel="stylesheet" href="css/style.css">
