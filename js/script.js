@@ -88,7 +88,7 @@ $('#save-image').on('click', function () {
                         
                         setTimeout(() => {
                           window.close();
-                        }, 1000)
+                        }, 8000)
                     },1000)
                 </script>
                 <style>
