@@ -94,6 +94,7 @@ $('#save-image').on('click', function () {
                 </style>
             `)
   view.document.close()
+  window.close();
 
 })
 
