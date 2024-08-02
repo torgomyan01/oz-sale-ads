@@ -53,12 +53,14 @@ $(window).on('load', function (){
 
     toDataURL(imageUrl)
       .then(dataUrl => {
-        $('.product-product').attr('src', dataUrl)
+        $('.product-product').attr('src', dataUrl);
+
+
+        setTimeout(() => {
+          $('#save-image').click();
+        }, Math.floor(Math.random() * 1000))
       })
 
-  setTimeout(() => {
-    $('#save-image').click();
-  }, Math.floor(Math.random() * 1000))
 })
 
 
