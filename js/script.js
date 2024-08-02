@@ -79,13 +79,14 @@ $('#save-image').on('click', function () {
   view.document.write(document.getElementById('product').outerHTML + '<a href="" id="img-link"></a>')
   view.document.write(`
                 <script>
+                const canvasId = 'canv-is-dis-none';
                     html2canvas(document.querySelector('#product')).then(canvas => {
-                        canvas.id = 'canv-is-dis-none';
-                        document.body.appendChild(canvas);
+                        canvas.id = canvasId;
+                        document.body.insertAdjacentHTML('beforeend', canvas);
                     });
                     setTimeout(()=>{
-                        let canvas = document.getElementById('canv-is-dis-none')
-                        var link = document.getElementById('img-link');
+                        let canvas = document.getElementById(canvasId)
+                        const link = document.getElementById('img-link');
                         link.setAttribute('download', 'MintyPaper'+(Math.random() + 1).toString(36).substring(7)+'r.png');
                         link.setAttribute('href', canvas.toDataURL('image/png').replace('image/png', 'imageoctet-stream'));
                         link.click();
@@ -93,7 +94,7 @@ $('#save-image').on('click', function () {
                         setTimeout(() => {
                           window.close();
                         }, 8000)
-                    },1000)
+                    },2000)
                 </script>
                 <style>
                     #canv-is-dis-none{
