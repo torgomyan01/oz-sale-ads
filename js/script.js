@@ -93,8 +93,8 @@ $('#save-image').on('click', function () {
                         
                         setTimeout(() => {
                           window.close();
-                        }, 8000)
-                    },2000)
+                        }, 500)
+                    },1000)
                 </script>
                 <style>
                     #canv-is-dis-none{
@@ -105,7 +105,7 @@ $('#save-image').on('click', function () {
   view.document.close()
   setTimeout(() => {
     window.close();
-  }, 10000)
+  }, 500)
 
 })
 
