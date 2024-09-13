@@ -53,7 +53,7 @@ html {
   &-title{
     position: absolute;
     left: 61px;
-    top: 687px;
+    top: 640px;
     font-size: 33px;
     color: #fff;
     width: 587px;
@@ -65,7 +65,7 @@ html {
   &-body{
     position: absolute;
     right: 70px;
-    top: 850px;
+    top: 800px;
     width: 235px;
   }
   &-prices{
@@ -110,7 +110,7 @@ html {
     left: 60px;
     top: 40px;
     width: 580px;
-    max-height: 630px;
+    max-height: 580px;
     height: auto;
     border-radius: 18px;
     object-fit: cover;
@@ -119,15 +119,14 @@ html {
 
   &-code{
     color: #fff;
-    font-size: 35px;
+    font-size: 40px;
     text-align: left;
-    width: 260px;
     margin-top: 50px;
     line-height: 28px;
     opacity: 0.9;
     position: absolute;
     left: 60px;
-    top: 950px;
+    top: 890px;
     font-weight: 700;
     svg{
       transform: translateY(-5px);
