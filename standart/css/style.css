@@ -120,9 +120,6 @@ html {
   top: 890px;
   font-weight: 700;
 }
-.product-code svg {
-  transform: translateY(-5px);
-}
 .product-location {
   position: absolute;
   top: 910px;
