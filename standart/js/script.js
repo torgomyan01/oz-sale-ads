@@ -7,31 +7,9 @@ const code = url.searchParams.get("code");
 
 
 const productTitle = $('.product-title');
-const containerWidth = 870;
-const maxFontSize = 40; // Maximum font size in pixels
-const minFontSize = 10; // Minimum font size in pixels
-const titleLength = title.length;
-
-// Calculate the initial font size based on the length of the title
-let fontSize = maxFontSize - (titleLength / 4);
-
-// Ensure the initial font size is within bounds
-if (fontSize > maxFontSize) fontSize = maxFontSize;
-if (fontSize < minFontSize) fontSize = minFontSize;
-
-productTitle.css('font-size', `${fontSize}px`);
 
 
-while (title.offsetWidth > containerWidth && fontSize > minFontSize) {
-  fontSize--;
-  productTitle.css('font-size', `${fontSize}px`);
-}
-
-// if(!img_link || !title || !price || !old_price || !code){
-//   alert('Տվյալները ամբողջովին հասանելի չեն հնարաոր է չստացվի');
-// }
-
-productTitle.text(title)
+productTitle.text(title.slice(0, 120))
 $('.product-price').text(price)
 $('.product-sale-price').text(old_price)
 $('.product-code span').text(code)
