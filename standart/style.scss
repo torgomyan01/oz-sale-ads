@@ -33,11 +33,18 @@ html {
   transition: 0.3s;
 }
 
-
 .product{
   width: 700px;
   position: relative;
   margin: 0 auto;
+
+  .ozon-logo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    width: 160px;
+  }
 
   .bg{
     width: 100%;
@@ -46,20 +53,19 @@ html {
   &-title{
     position: absolute;
     left: 61px;
-    top: 477px;
-    font-size: 23px;
+    top: 687px;
+    font-size: 33px;
     color: #fff;
     width: 587px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
+    font-weight: 700;
   }
-
-
 
   &-body{
     position: absolute;
-    right: 65px;
-    top: 555px;
+    right: 70px;
+    top: 850px;
     width: 235px;
   }
   &-prices{
@@ -86,12 +92,12 @@ html {
     text-align: center;
     font-family: sans-serif;
     font-weight: 600;
-    transform: translate(-50%, -50%) rotate(-10deg);
+    transform: translate(-50%, -50%);
   }
   &-sale-price{
     position: absolute;
-    bottom: 10px;
-    right: 7px;
+    bottom: 5px;
+    right: 10px;
     color: #fff;
     font-size: 14px;
     text-align: right;
@@ -101,25 +107,31 @@ html {
 
   &-product{
     position: absolute;
-    left: 69px;
-    top: 546px;
-    width: 313px;
-    max-height: 340px;
+    left: 60px;
+    top: 40px;
+    width: 580px;
+    max-height: 630px;
     height: auto;
     border-radius: 18px;
     object-fit: cover;
+    object-position: top;
   }
 
   &-code{
     color: #fff;
-    font-size: 26px;
-    text-align: center;
+    font-size: 35px;
+    text-align: left;
     width: 260px;
     margin-top: 50px;
     line-height: 28px;
-    transform: rotate(-25deg);
-    font-weight: 100;
     opacity: 0.9;
+    position: absolute;
+    left: 60px;
+    top: 950px;
+    font-weight: 700;
+    svg{
+      transform: translateY(-5px);
+    }
   }
   &-location{
     position: absolute;
