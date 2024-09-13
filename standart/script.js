@@ -72,11 +72,11 @@ $('#save-image').on('click', function () {
   view = window.open("", `view${(Math.random() + 1).toString(36).substring(7)}`)
   view.document.open()
   view.document.write(`
-                <link rel="stylesheet" href="css/style.css">
+                <link rel="stylesheet" href="style.css">
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-                <script src="js/jquery-3.4.1.min.js"></script>
-                <script src="js/html2canvas.min.js"></script>
+                <script src="../js/jquery-3.4.1.min.js"></script>
+                <script src="../js/html2canvas.min.js"></script>
             `)
   view.document.write(document.getElementById('product').outerHTML + '<a href="" id="img-link"></a>')
   view.document.write(`
