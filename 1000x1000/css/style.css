@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+.trans {
+  transition: 0.3s;
+}
+
+.product {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+.product-product {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product .ozon-logo {
+  position: absolute;
+  top: 53px;
+  right: 15px;
+  width: 399px;
+}
+.product-price {
+  position: absolute;
+  bottom: 194px;
+  right: 43px;
+  width: 600px;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, #FFF 42.36%, #FFF 73.52%, rgba(255, 255, 255, 0.05) 100%);
+  color: #FF0198;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+.product-code {
+  position: absolute;
+  bottom: 68px;
+  right: 43px;
+  width: 600px;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, #FFF 42.36%, #FFF 73.52%, rgba(255, 255, 255, 0.05) 100%);
+  color: #FF0198;
+  font-size: 50px;
+  line-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+#save-image {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
