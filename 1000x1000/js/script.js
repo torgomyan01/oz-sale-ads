@@ -9,7 +9,7 @@ const code = url.searchParams.get("code");
 $('.product-price').text(price)
 // $('.product-sale-price').text(old_price)
 $('.product-code-num').text(code)
-// $('.product-product').attr('src', img_link)
+$('.product-product').attr('src', img_link)
 
 
 const toDataURL = url => fetch(url)
