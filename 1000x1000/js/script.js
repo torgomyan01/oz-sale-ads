@@ -66,7 +66,7 @@ $('#save-image').on('click', function () {
                         link.click();
                         
                         setTimeout(() => {
-                          // window.close();
+                          window.close();
                         }, 500)
                     });
                   
@@ -77,9 +77,9 @@ $('#save-image').on('click', function () {
                     }
                 </style>
             `)
-  // view.document.close()
+  view.document.close()
   setTimeout(() => {
-    // window.close();
+    window.close();
   }, 500)
 
 })
